@@ -1,7 +1,7 @@
 {
   "name": "ticket-check-action",
   "description": "Verify that your pull request is linked to a ticketing system",
-  "version": "1.5.3",
+  "version": "1.5.7",
   "author": "Gregory Hunt <huntg1@gmail.com>, Neo Financial Engineering <engineering@neofinancial.com>",
   "license": "MIT",
   "repository": {
@@ -37,16 +37,19 @@
     ]
   },
   "devDependencies": {
-    "@actions/core": "^1.10.0",
-    "@actions/github": "4.0.0",
-    "@types/node": "13.11.0",
-    "@vercel/ncc": "0.25.1",
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "@types/node": "^24.0.0",
+    "@vercel/ncc": "^0.38.3",
     "eslint": "^7.32.0",
     "eslint-config-neo": "0.5.2",
     "husky": "^8.0.3",
     "is-plain-object": "^5.0.0",
     "lint-staged": "^10.1.1",
     "prettier": "1.19.1",
-    "typescript": "3.8.3"
+    "typescript": "^5.0.0"
+  },
+  "overrides": {
+    "lodash": "^4.17.23"
   }
 }
