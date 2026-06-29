@@ -149,7 +149,7 @@ async function run(): Promise<void> {
         return;
       }
       if (titleCheck === null) {
-        client.pulls.update({
+        client.rest.pulls.update({
           owner,
           repo,
           pull_number: number,
@@ -160,7 +160,7 @@ async function run(): Promise<void> {
         });
       }
       if (!quiet) {
-        client.pulls.createReview({
+        client.rest.pulls.createReview({
           owner,
           repo,
           pull_number: number,
@@ -259,7 +259,7 @@ async function run(): Promise<void> {
       }
 
       if (titleCheck === null) {
-        client.pulls.update({
+        client.rest.pulls.update({
           owner,
           repo,
           pull_number: number,
@@ -270,7 +270,7 @@ async function run(): Promise<void> {
         });
       }
       if (!quiet) {
-        client.pulls.createReview({
+        client.rest.pulls.createReview({
           owner,
           repo,
           pull_number: number,
